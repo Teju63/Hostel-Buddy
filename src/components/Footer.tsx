@@ -53,28 +53,28 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Features</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/health-monitoring" className="text-muted-foreground hover:text-primary transition-colors">
                   Health Monitoring
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/nutrition-support" className="text-muted-foreground hover:text-primary transition-colors">
                   Nutrition Support
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Mental Wellness
+                <Link to="/life-balance" className="text-muted-foreground hover:text-primary transition-colors">
+                  Life Balance
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/fitness-assistant" className="text-muted-foreground hover:text-primary transition-colors">
                   Fitness Assistance
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Emergency Help
+                <Link to="/daily-routine" className="text-muted-foreground hover:text-primary transition-colors">
+                  Daily Routine
                 </Link>
               </li>
             </ul>

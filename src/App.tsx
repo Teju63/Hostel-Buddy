@@ -13,6 +13,10 @@ import Emergency from "@/pages/Emergency";
 import AIChat from "@/pages/AIChat";
 import DailyRoutine from "@/pages/DailyRoutine";
 import NotFound from "@/pages/NotFound";
+import HealthMonitoring from "@/pages/HealthMonitoring";
+import NutritionSupport from "@/pages/NutritionSupport";
+import LifeBalance from "@/pages/LifeBalance";
+import FitnessAssistant from "@/pages/FitnessAssistant";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +36,10 @@ const App = () => (
               <Route path="/emergency" element={<Emergency />} />
               <Route path="/ai-chat" element={<AIChat />} />
               <Route path="/daily-routine" element={<DailyRoutine />} />
+              <Route path="/health-monitoring" element={<HealthMonitoring />} />
+              <Route path="/nutrition-support" element={<NutritionSupport />} />
+              <Route path="/life-balance" element={<LifeBalance />} />
+              <Route path="/fitness-assistant" element={<FitnessAssistant />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

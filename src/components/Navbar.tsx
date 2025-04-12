@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Heart, Brain, Activity, AlertTriangle } from 'lucide-react';
+import { Menu, X, Heart, Brain, Activity, AlertTriangle, Utensils, Clock, Dumbbell, MessageSquare } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,14 +25,14 @@ const Navbar = () => {
           <Link to="/dashboard" className="text-sm font-medium hover:text-primary transition-colors">
             Dashboard
           </Link>
+          <Link to="/health-monitoring" className="text-sm font-medium hover:text-primary transition-colors">
+            Health Monitoring
+          </Link>
           <Link to="/mental-health" className="text-sm font-medium hover:text-primary transition-colors">
             Mental Health
           </Link>
-          <Link to="/emergency" className="text-sm font-medium hover:text-primary transition-colors">
-            Emergency
-          </Link>
-          <Link to="/ai-chat" className="text-sm font-medium hover:text-primary transition-colors">
-            AI Chat
+          <Link to="/nutrition-support" className="text-sm font-medium hover:text-primary transition-colors">
+            Nutrition
           </Link>
         </nav>
         
@@ -71,12 +71,52 @@ const Navbar = () => {
               Dashboard
             </Link>
             <Link 
+              to="/health-monitoring" 
+              className="flex items-center gap-2 p-2 rounded-md hover:bg-muted"
+              onClick={() => setIsOpen(false)}
+            >
+              <Activity className="h-4 w-4" />
+              Health Monitoring
+            </Link>
+            <Link 
               to="/mental-health" 
               className="flex items-center gap-2 p-2 rounded-md hover:bg-muted"
               onClick={() => setIsOpen(false)}
             >
               <Brain className="h-4 w-4" />
               Mental Health
+            </Link>
+            <Link 
+              to="/nutrition-support" 
+              className="flex items-center gap-2 p-2 rounded-md hover:bg-muted"
+              onClick={() => setIsOpen(false)}
+            >
+              <Utensils className="h-4 w-4" />
+              Nutrition
+            </Link>
+            <Link 
+              to="/life-balance" 
+              className="flex items-center gap-2 p-2 rounded-md hover:bg-muted"
+              onClick={() => setIsOpen(false)}
+            >
+              <Clock className="h-4 w-4" />
+              Life Balance
+            </Link>
+            <Link 
+              to="/fitness-assistant" 
+              className="flex items-center gap-2 p-2 rounded-md hover:bg-muted"
+              onClick={() => setIsOpen(false)}
+            >
+              <Dumbbell className="h-4 w-4" />
+              Fitness Assistant
+            </Link>
+            <Link 
+              to="/daily-routine" 
+              className="flex items-center gap-2 p-2 rounded-md hover:bg-muted"
+              onClick={() => setIsOpen(false)}
+            >
+              <Clock className="h-4 w-4" />
+              Daily Routine
             </Link>
             <Link 
               to="/emergency" 
@@ -91,6 +131,7 @@ const Navbar = () => {
               className="flex items-center gap-2 p-2 rounded-md hover:bg-muted"
               onClick={() => setIsOpen(false)}
             >
+              <MessageSquare className="h-4 w-4" />
               AI Chat
             </Link>
             <Button className="w-full mt-2">Sign In</Button>

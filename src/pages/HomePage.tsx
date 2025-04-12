@@ -55,42 +55,55 @@ const HomePage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <FeatureCard
-              icon={Activity}
-              title="Health Monitoring"
-              description="Track your physical activity, diet patterns, and sleep cycles with personalized recommendations."
-            />
-            <FeatureCard
-              icon={Utensils}
-              title="Nutrition Support"
-              description="Get AI-curated healthy meal plans and budget-friendly nutrition guidance for hostel living."
-            />
-            <FeatureCard
-              icon={Brain}
-              title="Mental Wellness"
-              description="Access daily mood check-ins, meditation tools, and a confidential AI emotional support system."
-            />
-            <FeatureCard
-              icon={Clock}
-              title="Life Balance"
-              description="Smart scheduling tools to manage study time, rest periods, and fitness activities."
-            />
-            <FeatureCard
-              icon={Dumbbell}
-              title="Fitness Assistant"
-              description="Quick 10-20 minute hostel room workouts and daily stretching/yoga recommendations."
-            />
-            <FeatureCard
-              icon={AlertCircle}
-              title="Emergency Help"
-              description="One-tap access to nearby hospitals and an AI-assisted symptom checker for urgent situations."
-            />
-            <FeatureCard
-              icon={Calendar}
-              title="Ideal Daily Routine"
-              description="Follow our balanced schedule designed for optimal physical and mental wellbeing of hostel students."
-              className="lg:col-span-3 md:max-w-md md:mx-auto"
-            />
+            <Link to="/health-monitoring">
+              <FeatureCard
+                icon={Activity}
+                title="Health Monitoring"
+                description="Track your physical activity, diet patterns, and sleep cycles with personalized recommendations."
+              />
+            </Link>
+            <Link to="/nutrition-support">
+              <FeatureCard
+                icon={Utensils}
+                title="Nutrition Support"
+                description="Get AI-curated healthy meal plans and budget-friendly nutrition guidance for hostel living."
+              />
+            </Link>
+            <Link to="/mental-health">
+              <FeatureCard
+                icon={Brain}
+                title="Mental Wellness"
+                description="Access daily mood check-ins, meditation tools, and a confidential AI emotional support system."
+              />
+            </Link>
+            <Link to="/life-balance">
+              <FeatureCard
+                icon={Clock}
+                title="Life Balance"
+                description="Smart scheduling tools to manage study time, rest periods, and fitness activities."
+              />
+            </Link>
+            <Link to="/fitness-assistant">
+              <FeatureCard
+                icon={Dumbbell}
+                title="Fitness Assistant"
+                description="Quick 10-20 minute hostel room workouts and daily stretching/yoga recommendations."
+              />
+            </Link>
+            <Link to="/emergency">
+              <FeatureCard
+                icon={AlertCircle}
+                title="Emergency Help"
+                description="One-tap access to nearby hospitals and an AI-assisted symptom checker for urgent situations."
+              />
+            </Link>
+            <Link to="/daily-routine" className="lg:col-span-3 md:max-w-md md:mx-auto">
+              <FeatureCard
+                icon={Calendar}
+                title="Ideal Daily Routine"
+                description="Follow our balanced schedule designed for optimal physical and mental wellbeing of hostel students."
+              />
+            </Link>
           </div>
         </div>
       </section>

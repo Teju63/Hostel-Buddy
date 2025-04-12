@@ -10,14 +10,19 @@ interface RoutineItemProps {
   description: string;
   className?: string;
   icon?: React.ReactNode;
+  onClick?: () => void;
 }
 
-const DailyRoutineCard = ({ time, activity, description, className, icon }: RoutineItemProps) => {
+const DailyRoutineCard = ({ time, activity, description, className, icon, onClick }: RoutineItemProps) => {
   return (
-    <div className={cn(
-      "flex gap-4 p-4 border rounded-lg bg-white hover:shadow-md transition-all",
-      className
-    )}>
+    <div 
+      className={cn(
+        "flex gap-4 p-4 border rounded-lg bg-white hover:shadow-md transition-all",
+        onClick && "cursor-pointer",
+        className
+      )}
+      onClick={onClick}
+    >
       <div className="flex-shrink-0 p-3 health-gradient rounded-full h-fit">
         {icon ? icon : <Clock className="h-5 w-5 text-white" />}
       </div>
