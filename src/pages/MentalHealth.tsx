@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -13,6 +12,7 @@ import {
   MessageSquare
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import MentalHealthAssessment from "@/components/MentalHealthAssessment";
 
 const MentalHealth = () => {
   return (
@@ -22,12 +22,17 @@ const MentalHealth = () => {
         Tools and resources to support your mental wellbeing during college
       </p>
 
-      <Tabs defaultValue="resources" className="mb-8">
-        <TabsList className="grid w-full grid-cols-3">
+      <Tabs defaultValue="assessment" className="mb-8">
+        <TabsList className="grid w-full grid-cols-4">
+          <TabsTrigger value="assessment">Assessment</TabsTrigger>
           <TabsTrigger value="resources">Resources</TabsTrigger>
           <TabsTrigger value="mood-tracker">Mood Tracker</TabsTrigger>
           <TabsTrigger value="journal">Journal</TabsTrigger>
         </TabsList>
+        
+        <TabsContent value="assessment" className="pt-4">
+          <MentalHealthAssessment />
+        </TabsContent>
         
         <TabsContent value="resources" className="pt-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
