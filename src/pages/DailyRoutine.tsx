@@ -1,9 +1,17 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import DailyRoutineCard from "@/components/DailyRoutineCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Alarm, Sun, Coffee, Dumbbell, Book, Utensils, Moon, Brain } from "lucide-react";
+import { 
+  AlarmClock, 
+  Sun, 
+  Coffee, 
+  Dumbbell, 
+  Book, 
+  Utensils, 
+  Moon, 
+  Brain 
+} from "lucide-react";
 
 const DailyRoutine = () => {
   return (
@@ -197,7 +205,7 @@ const DailyRoutine = () => {
         <CardContent className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="p-4 bg-muted rounded-lg">
             <div className="flex items-center gap-2 mb-2">
-              <Alarm className="h-5 w-5 text-primary" />
+              <AlarmClock className="h-5 w-5 text-primary" />
               <h3 className="font-semibold">Improved Sleep Quality</h3>
             </div>
             <p className="text-sm text-muted-foreground">
