@@ -10,7 +10,9 @@ import {
   Dumbbell, 
   AlertCircle, 
   MessageSquare,
-  ArrowDown
+  ArrowDown,
+  Heart,
+  Calendar
 } from "lucide-react";
 
 const HomePage = () => {
@@ -82,6 +84,12 @@ const HomePage = () => {
               icon={AlertCircle}
               title="Emergency Help"
               description="One-tap access to nearby hospitals and an AI-assisted symptom checker for urgent situations."
+            />
+            <FeatureCard
+              icon={Calendar}
+              title="Ideal Daily Routine"
+              description="Follow our balanced schedule designed for optimal physical and mental wellbeing of hostel students."
+              className="lg:col-span-3 md:max-w-md md:mx-auto"
             />
           </div>
         </div>
